@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+  </head>
+<body>
+<div class="page">
+  <header class="main-container">
+    <img src = "{% static 'app/img/logo.png' %}">
+    <div class = 'hrefs'>
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'home' %}#anchor_model">Model</a>
+      <a href="{% url 'home' %}#anchor_feature">Feature</a>
+      <a href="{% url 'home' %}#anchor_contact">Contact</a>
+    </div>
+    <div>
+      <button>
+        {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}?next={{ request.path }}">Logout</a>
+    {% else %}
+        <a href="{% url 'login' %}?next={{ request.path }}">Log in</a>
+    {% endif %}   
+      </button>
+    </div>
+  </header>
+
+  {% block content %}
+  {% endblock content %}
+
+    </div>
+</body>
+</html>

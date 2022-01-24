@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class = "back">
+      <section class = 'tops main-container'>
+        <div class = "ride-on">
+          <p class = 'title'>Ride-on R15 V4 with Smile</p>
+          <p class="titl">R-15 is the thing which i want to earn with my own money, rather than earning it with my parents Money</p>
+          <button>Book now →<a href="{% url 'order' %}"></a></button>
+          <div class="descr">
+            <div class = 'bloks'>
+              <p class="font-bloks">155c</p>
+              <p class="titl no_pad">Engine Displ</p>
+            </div>
+            <div class = 'bloks'>
+              <p class="font-bloks">18.4 bhp</p>
+              <p class="titl no_pad">Max Power</p>
+            </div>
+            <div class = 'bloks'>
+              <p class="font-bloks">142 Kg</p>
+              <p class="titl no_pad">Weight</p>
+            </div>
+          </div>
+        </div>
+        <div class = 'ride-on'>
+          <img class="img2021" src="{% static 'app/img/2021.png' %}">
+          <img class="imgbike" src="{% static 'app/img/bike.png' %}">
+        </div>
+      </section>
+    </div>
+    <section>
+      <div id='anchor_model'>
+        <p class="variants">Variants of Yamaha R15 V4</p>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada augue et gravida sed ipsum. Fames imperdiet massa tortor pellentesque urna.</p>
+      </div>
+      <div class='main-container colorvariants'>
+        <div class="card">
+         
+          <img class="card-image" src="{% static 'app/img/2022-yamaha-r15-v4-blue-right-side-removebg1.png' %}">
+          <h3 class="card-title2">R15 V4 Racing Blue</h3>
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <h3 class="card-title">Rs. 1.72 Lakh</h3>
+          <button>Book now →<a href="{% url 'order' %}"></a></button>
+        </div>
+        <div class="card">
+          <img class="card-image" src="{% static 'app/img/yamaha-r15-v4-metallic-red-edition-side-view-removebg-preview.png' %}">
+          <h3 class="card-title2">R15 V4 Metallic Red</h3>
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <h3 class="card-title">Rs. 1.67 Lakh</h3>
+          <button>Book now →<a href="{% url 'order' %}"></a></button>
+        </div>
+        <div class="card">
+          <img class="card-image" src="{% static 'app/img/yamaha-r15-v4-dark-knight-edition-side-view-removebg-preview.png' %}">
+          <h3 class="card-title2">R15 V4 Dark Knite</h3>
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <h3 class="card-title">Rs. 1.68 Lakh</h3>
+          <button>Book now →<a href="{% url 'order' %}"></a></button>
+        </div>
+        <div class="card">
+          <img class="card-image" src="{% static 'app/img/2022-yamaha-r15m-grey-right-side-800x445-removebg-preview.png' %}">
+          <h3 class="card-title2">R15 V4 Metallic</h3>
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <img src="{% static 'app/img/Star.png' %}">
+          <h3 class="card-title">Rs. 1.77 Lakh</h3>
+          <button>Book now →<a href="{% url 'order' %}"></a></button>
+        </div>
+        </div>
+      <div>
+        <p class="variants">Video</p>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada<br> augue et gravida sed ipsum.</p>
+      </div>
+      <div>
+    <iframe class="video" width="1100" height="665" src="https://www.youtube.com/embed/B1QWfiXEPAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="anchor_feature">
+      <p class="variants">Feature</p>
+      <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Malesuada augue et gravida sed ipsum.</p>
+    </div>
+    <div class="main-container feature">
+      <div class ="divdiv">
+        <img src="{% static 'app/img/groups/dualchannel.jpg' %}">
+        <img src="{% static 'app/img/groups/aluminium.jpg' %}">
+        <img src="{% static 'app/img/groups/upside.jpg' %}">
+      </div>
+      <div>
+        <img src="{% static 'app/img/groups/front-view-removebg.jpg' %}">
+      </div>
+      <div>
+        <img src="{% static 'app/img/groups/fi.jpg' %}">
+        <img src="{% static 'app/img/groups/quickshifter.jpg' %}">
+        <img src="{% static 'app/img/groups/traction.jpg' %}">
+      </div>
+    </div>
+    <div class="main-container just-cont">
+      <img class="engine-img" src="{% static 'app/img/groups/performance01-removebg-preview.jpg' %}">
+      <div class="engin">
+        <p class="engine">Engine <br>The Appetizer</p>
+        <p class="theliq">The liquid cooled single overhead camshaft fuel injection engine churns out a maximum horse power of 13.5kW(18.4PS)/10000r/min and maximum torque of 14.2N.m (1.4kgf.m) / 7500r/min. What’s more the engine is equipped with a Traction Control System and a Quick Shifter* (up-shift) too!</p>
+      </div>
+    </div>
+    <div class="main-container just-cont">
+      <div>
+        <p class="engine">Y-CONNECT APP</p>
+        <p class="y-app theliq">The Yamaha Y-Connect App displays phone notifications on your<br> instrument cluster screen.</p>
+        <div class="apps">
+          <div class="app">
+            <img class="el" src="{% static 'app/img/R15v4bike/EllipseCall.png' %}">
+            <img class="phone" src="{% static 'app/img/R15v4bike/call.png' %}">
+            <img class="cal" src="{% static 'app/img/R15v4bike/CALL_ALERT.png' %}">
+          </div>
+          <div class="app">
+            <img class="icon" src="{% static 'app/img/R15v4bike/dog.png' %}">
+            <img class="ico" src="{% static 'app/img/R15v4bike/smsemail.png' %}">
+          </div>
+          <div class="app">
+            <img class="icon" src="{% static 'app/img/R15v4bike/app.png' %}">
+            <img class="ico" src="{% static 'app/img/R15v4bike/appconn.png' %}">
+          </div>
+          <div class="app">
+            <img class="icon" src="{% static 'app/img/R15v4bike/bat.png' %}">
+            <img class="ico" src="{% static 'app/img/R15v4bike/phonebat.png' %}">
+          </div>
+        </div>
+      </div>
+      <img class="" src="{% static 'app/img/R15v4bike/Y-Connect-APP.png' %}">
+      </div>
+    </div>
+    </section>
+    <footer id = "anchor_contact" class="footer">
+      <div class="back2">
+        <div class="foot">
+          <img src = "{% static 'app/img/logo.png' %}">
+          <p class='hei list'>Lorem ipsum sit amet, consectetur <br>adipiscing elit.</p>
+        </div>
+        <div class="cont">
+          <ul>
+            <li>News</li>
+            <li class='list'>Features</li>
+            <li class='list'>Testimotion</li>
+            <li class='list'>Help</li>
+          </ul>
+        </div>
+        <div class="cont">
+          <ul>
+            <li>Resourses</li>
+            <li class='list'>Service Four</li>
+            <li class='list'>Contents</li>
+            <li class='list'>Navigation</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    {% endblock %}
